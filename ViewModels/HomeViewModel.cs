@@ -233,6 +233,11 @@ namespace StudentEMS.ViewModels
 
         private void DeleteStudent(object obj)
         {
+            if(SelectedStudent == null)
+            {
+                return;
+            }
+
             MessageBoxResult result = MessageBox.Show("Are you sure you want to delete?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (result == MessageBoxResult.No)

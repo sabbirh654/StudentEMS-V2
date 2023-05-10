@@ -85,14 +85,13 @@
                 </Style>
             </DataGrid.CellStyle>
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding StudentId}"/>
-
+                <DataGridTextColumn Header="ID" Binding="{Binding StudentId}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}"/>
                 <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}"/>
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
                 <DataGridTextColumn Header="Session" Binding="{Binding Session}"/>
                 <DataGridTextColumn Header="Department" Binding="{Binding Department}"/>
-                <DataGridTextColumn Header="CGPA" Binding="{Binding CGPA}" Width="200"/>
+                <DataGridTextColumn Header="CGPA" Binding="{Binding CGPA}"/>
                 <DataGridTextColumn Header="Last Enrolled Semester" Binding="{Binding LastEnrolledSemester}"/>
                 <DataGridTextColumn Header="Total Earned Credits" Binding="{Binding TotalEarnedCredits}"/>
             </DataGrid.Columns>

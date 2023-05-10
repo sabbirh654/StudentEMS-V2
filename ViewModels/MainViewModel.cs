@@ -40,6 +40,21 @@ namespace StudentEMS.ViewModels
                 SelectedViewModel = new HomeViewModel();
                 CurrentView.CurrentViewName = parameter;
             }
+            else if (parameter == NavigationItem.Subject.ToString())
+            {
+                SelectedViewModel = new SubjectViewModel();
+                CurrentView.CurrentViewName = parameter;
+            }
+            else if (parameter == NavigationItem.UpdateProfile.ToString())
+            {
+                SelectedViewModel = new UpdateProfileViewModel();
+                CurrentView.CurrentViewName = parameter;
+            }
+            else if (parameter == NavigationItem.Exit.ToString())
+            {
+                SelectedViewModel = new ExitViewModel();
+                CurrentView.CurrentViewName = parameter;
+            }
         }
     }
 }
